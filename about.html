@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name ="viewport" content = "width = device-width, initial-scale =1.0">
+	<title>All Products - stylelab</title>
+	<link rel="stylesheet" href="style.css" >
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" 
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+		
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="images\logo.png" width="125px"></a>
+			</div>
+		<nav>
+			<ul id = "MenuItems">
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="products.html"> Products </a></li>
+				<li><a href="about.html"> About </a></li>
+				<li><a href="contact.html"> Contact </a></li>
+				<li><a href="account.html"> Account </a></li>
+			</ul>
+		</nav>
+		
+		<a href="cart.html"><img src="images\cart.png" width="30px" height="30px"></a>
+		<img src="images\menu.png" class="menu-icon" onclick ="menutoggle()">
+
+		</div>
+	
+	</div>
+
+
+<!------About Section------->
+<div class="about">
+<div class="container">
+	<h1 class="title"> About Us </h1>
+<div class="row">
+<div class="col-6">
+<div class="about-content">
+                Welcome to stylelab, your number one source for all things. We're dedicated to giving you the very best of services, with a focus on dependability, customer service and uniqueness.
+
+Founded in 2022 by Salman Basha, Sports Compass has come a long way from its beginnings in a Copenhagen. When Daniel Brown first started out, his passion for helping other parents be more eco-friendly, providing the best equipment for his fellow sports lover drove him to do intense research, quit his day job, and gave him the impetus to turn hard work and inspiration into to a booming online store. We now serve customers all over the US, the world, the Austin area, and are thrilled to be a part of the quirky, eco-friendly, fair trade wing of the sports industry.
+
+We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+
+
+</div>
+
+<button type="button" class="btnbtn-primary">Read More>>
+
+</button>
+
+</div>
+
+<div class="col-6 skills-bar">
+
+	<h3>Delivery Rate</h3>
+<div class="progress">
+	<progress id="file" max="100" value="85"> 85% </progress>
+<div class="progress-bar" style = "width:85%";>85%</div>
+</div>
+
+<h3>Customer Growth</h3>
+<div class="progress">
+<progress id="file" max="100" value="75"> 75% </progress>
+<div class="progress-bar" style = "width:75%";>75%</div>
+</div>
+
+<h3>Happy Employee</h3>
+<div class="progress">
+	<progress id="file" max="100" value="95"> 95% </progress>
+<div class="progress-bar" style = "width:95%";>95%</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!------Services Section------->
+<div class="services">
+
+<div class="small-container">
+<h1 class="title">Our Services</h1>
+<div class="row services" >
+<div class= "col-4 text-center">
+<div class="icon">
+<i class="fa fa-phone"></i>
+</div>
+<h3> 24/7 Support</h3>
+<p>on order related queries</p>
+</div>
+
+<div class="col-4 text-center">
+<div class="icon">
+<i class="fa fa-shopping-cart"></i>
+</div>
+<h3> Return within 30 days</h3>
+<p>of receiving your order</p>
+</div>
+
+<div class="col-4 text-center">
+<div class="icon">
+<i class="fa fa-truck"></i>
+</div>
+<h3>Get free delivery</h3>
+<p>on orders above 99 dollar</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!--------------------- footer  -------------------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-3">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="images\playstore.png">
+						<img src="images\appstore.png">
+					</div>
+				</div>
+				<div class="footer-col-3">
+					<img src="images\logo.png">					
+					<p>Our Purpose Is To Sustainably Make the Pleasure and
+					Benefits of Sports Accessible to the Many.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affilicate</li>					
+					</ul>
+				</div>
+				<div class="footer-col-3">
+					<h3>Contact & Follow us</h3>
+					<ul>
+					<li><a href="https://Facebook.com">Facebook </a></li>
+					<li><a href="https://Linkedin.com">LinkedIn </a></li>
+					<li><a href="https://Telegram.com">Telegram </a></li>
+					<li><a href="https://Instagram.com">Instagram </a></li>		
+					<li><a href="https://YouTube.com">You Tube  </a></li>
+					<li>91-9876543210</li>
+					</ul>
+				</div>
+
+			</div>
+			<hr>
+			<p class="Copyright">Copyright@LencySuresh</p>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+<!--------------------- js for toggle menu -------------------->
+	<script>
+		varMenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle()
+		{
+			if(MenuItems.style.maxHeight == "0px")
+			{	
+				MenuItems.style.maxHeight = "200px";	
+			}
+			else
+			{
+				MenuItems.style.maxHeight = "0px";		
+			}
+				}
+	</script>
+
+</body>
+</html>
